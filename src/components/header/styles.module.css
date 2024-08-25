@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  background-color: #0067a3;
+  padding: 0 20px;
+}
+
+.heading {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.profile {
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+
+.avatar {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.profile_btn {
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 55px;
+  left: -70px;
+  width: 134px;
+  padding: 10px 8px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: #fff;
+  top: -5.5px;
+  right: 36px;
+  transform: rotate(45deg);
+}
+
+.menuItem {
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.menuItem:hover {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 428px) {
+  .header {
+    height: 65px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+}

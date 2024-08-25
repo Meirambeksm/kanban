@@ -1,0 +1,14 @@
+.categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  .categories {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
